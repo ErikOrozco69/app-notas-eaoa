@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 db = SQLAlchemy(app)
 
-app.config['SQLALCHEMY_DATABASE_URI'] ='postgresql://postgres:1234@localhost:5432/notas'
+app.config['SQLALCHEMY_DATABASE_URI'] ='postgres://wypksmatdmjrec:24f9898d444d48ce03d9e19efad4c6707c7772b354d56a25f5d7bb2f5edbba83@ec2-52-86-193-24.compute-1.amazonaws.com:5432/dee2mqi73so5dn'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] =False
 
 
