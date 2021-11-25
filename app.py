@@ -29,7 +29,9 @@ def index():
           }
     nombre="ERIK"
     lista_nombres=["ESMERALDA","JUAN","DAVID"]
+    print("Hola mundo")
     return render_template("index.html",variable =lista_nombres)
+
 
 @app.route("/about")
 def about():
