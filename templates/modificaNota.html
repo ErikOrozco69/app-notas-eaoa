@@ -1,0 +1,27 @@
+<!doctype html> 
+  <html lang="en">
+    
+  <head>
+      <meta charset="utf-8"> 
+      <link rel="stylesheet"  href="/static/css/estilo.css">
+
+  </head>
+
+<body>
+
+  <h1>MODIFICAR NOTAS</h1>
+  <form action="/modificarnota" method="POST"> 
+    <label for="titulo">Título de la Nota:</label><br>
+    <input type="text" name="campotitulo" value="{{nota.tituloNota}}"> 
+    <br>
+    <label for="cuerpo">Descripción de la Nota: </label><br>
+    <input type="text" name="campocuerpo" value="{{nota.cuerpoNota}}">
+    <input type ="hidden" name="idnota" value="{{nota.idNota}}">
+    <input type="submit" value="Modificar Nota">
+    
+</form>
+
+</body>
+</html>
+
+  

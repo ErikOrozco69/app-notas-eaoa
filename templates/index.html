@@ -1,0 +1,39 @@
+<!doctype html> 
+  <html lang="en">
+    
+  <head>
+      <meta charset="utf-8"> 
+      <link rel="stylesheet"  href="/static/css/estilo.css">
+
+  </head>
+
+<body>
+
+  <h1>REGISTRO DE NOTAS</h1>
+  <form action="/crearnota" method="POST"> 
+    <label for="titulo">Título de la Nota:</label><br>
+    <input type="text" name="campotitulo" value=""> 
+    <br>
+    <label for="cuerpo">Descripción de la Nota: </label><br>
+    <input type="text" name="campocuerpo" value="">
+    <input type="submit" value="Crear Nota" background-color=red>
+  </form>
+
+  <a href="/leernotas"><input type="button"  value="Ver notas creadas",></a>
+
+  <table align="center">
+    {% for nota in consulta %}
+    <tr>
+      <td>{{nota.idNota}}</td>
+      <td>{{nota.tituloNota}}</td>
+      <td>{{nota.cuerpoNota}}</td>
+      <td><a href="/eliminarnota/{{nota.idNota}}"> Eliminar</a></td>
+      <td><a href ="editarnota/{{nota.idNota}}">Editar</a></td>
+    </tr>
+    {% endfor %}
+  </table>
+
+</body>
+</html>
+
+  

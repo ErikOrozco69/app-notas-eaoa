@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(/static/imagen/nube.gif);   
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    
+    
+}
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-size: 1.2em; 
+    color: red;
+    
+}
+    
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5em;
+    color: rgb(24, 22, 24);
+    height: 200px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5em;
+    color: rgb(24, 22, 24);
+    height: 200px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.special{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    color: crimson;
+}
+
+
+label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    color: rgb(24, 22, 24);
+    display:block; width:x; height:y; text-align:center;
+}
+
+input {
+    width: 100%;
+    height: 28px;
+    background: #4ac7c7;
+    color: rgb(4, 49, 34);
+    font-size: 16px;
+    font-weight: bolder;
+    border-bottom: solid 2px rgb(11, 12, 12);
+    border: none;
+    border-radius: 6px;
+    margin: auto;
+    text-align: center;
+    border: blue 3px solid;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #000;
+ }
+ th, td {
+    width: 25%;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 0.3em;
+    caption-side: bottom;
+ }
+ caption {
+    padding: 0.3em;
+    color: #fff;
+     background: #000;
+ }
+ th {
+    background: #eee;
+ }
+
